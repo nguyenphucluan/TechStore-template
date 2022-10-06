@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"> 
+    <link rel="stylesheet" href="stylesheet/style/style.css">
+    <link rel="stylesheet" href="stylesheet/javascript/scripts.js">
+    <title>Homepage</title>
+</head>
+<body>
+    <div id="homepage" >  
+        <div class="navbar border-bottom border-1 border-dark">
+            <div id="image-logo" class="d-none d-sm-none d-md-none d-lg-flex d-flex w15 flex-column ">
+                <a href="#">
+                    <img src="/images/logo.svg" alt="logo Gear VN">
+                </a>                             
+            </div>
+
+            <div class="hidden-menu ">
+                <button class="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvas">
+                    <i class='fas fa-bars d-inline-flex' style='font-size:36px'></i>
+                </button>                                       
+            </div>
+
+            <div id="main-bar" class="d-flex flex-wrap flex-column ">              
+                <div id="navbar-top" class="d-flex flex-row text-uppercase">
+                     <div class="find w40 fs11">
+                         <input class="rounded-d" type="text" placeholder="Nhập mã hoặc tên sản phẩm..." style="font-size: 16px;">
+                         <button class="btn-search float-end rounded-c border-0 bg-danger">
+                             <i class="fa-solid fa-magnifying-glass" style="color:white;"></i>
+                        </button>
+                     </div>
+                    <div class="regis px-2 w15 fs11 d-none d-sm-none d-md-block">
+                        <a href="#" class="text-decoration-none text-black fw-bold">
+                               <i class="fab fa-wpforms" style='font-size:24px;'></i>
+                            <span>Đăng ký</span>
+                        </a>                           
+                     </div>
+                     <div class="login w15 fs11 d-none d-sm-none d-md-block">
+                          <a href="#" class="text-decoration-none text-black fw-bold">
+                            <i class='fas fa-user-circle' style='font-size:24px;'></i>
+                             <span>đăng nhập</span>
+                         </a>
+                     </div>
+                     <div class="voucher w15 fs11 d-none d-sm-none d-md-block">
+                         <a href="#" class="text-decoration-none text-black fw-bold">
+                             <i class="fas fa-gift" style='font-size:24px;'></i>
+                            <span>khuyến mãi</span>
+                        </a>
+                    </div>
+                    <div class="cart w15 fs11">
+                        <a href="#" class="text-decoration-none text-black fw-bold">
+                            <i class="fas fa-shopping-cart" style='font-size:24px;'></i>
+                            <h1 class="number-cart">1</h1>
+                            <span>giỏ hàng</span>
+                        </a>
+                    </div>
+                </div>  
+
+                <div id="navbar-bottom" class="d-none d-sm-none d-md-none d-lg-block">
+                    <div class="d-flex flex-row bd-highlight text-uppercase">
+                        <div class="hotline w15 border-start border-danger border-3 text-danger">
+                            <div class=" contain mx-3">
+                                <i class="fas fa-blender-phone"></i> 
+                                <a href="#" class="text-decoration-none fw-bold text-danger">                               
+                                    <span>tổng đài</span>
+                                </a>
+                            </div>                          
+                        </div>
+                        <div class="videos w15 border-start border-danger border-3 text-danger">
+                            <div class="contain mx-3">
+                                <i class="fab fa-youtube"></i>
+                                <a href="#" class="text-decoration-none fw-bold text-danger">                               
+                                    <span>videos</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="news w20 border-start border-danger border-3 text-danger">
+                            <div class=" contain mx-3">
+                                <i class="fab fa-hacker-news"></i>
+                                <a href="#" class="text-decoration-none fw-bold text-danger">                               
+                                    <span>tin công nghệ</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="apply w20 border-start border-danger border-3 text-danger">
+                            <div class=" contain mx-3">
+                                <i class="fas fa-user-alt"></i>
+                                <a href="#" class="text-decoration-none fw-bold text-danger">                               
+                                    <span>tuyển dụng</span>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="system w25 border-start border-danger border-3 text-danger">
+                            <div class=" contain mx-3 ">
+                                <i class="fab fa-shopware"></i>
+                                <a href="#" class="text-decoration-none fw-bold text-danger">                               
+                                    <span>hệ thống showroom</span>
+                                </a>
+                            </div>                            
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="navbar-btn" class="d-none d-sm-none d-md-none d-lg-flex w-100 flex">
+                <div class="w20 mx-1 rounded-d border-0 text-center bg-grey">                  
+                    <i class="fas fa-bars text-white" style="font-size:16px ;"></i>
+                    <span class=" text-uppercase fs11 text-white">danh mục sản phẩm</span>                                        
+                </div>
+                <div class="w20 mx-1">
+                    <button id="btn-navbar-btn" class="w-100 rounded-d border border-dark border-1">
+                        <a href="#" class="text-dark  text-decoration-none text-uppercase fs11">
+                            <i class="fab fa-amazon-pay" style="font-size:16px ;"></i>
+                            <span>hướng dẫn thanh toán</span>
+                        </a>
+                    </button>
+                </div>  
+                <div class="w20 mx-1">
+                    <button id="btn-navbar-btn" class="w-100 rounded-d border border-dark border-1">
+                        <a href="#" class="text-dark  text-decoration-none text-uppercase fs11">
+                            <i class="fab fa-amazon-pay" style="font-size:16px ;"></i>
+                            <span>hướng dẫn trả góp</span>
+                        </a>
+                    </button>
+                </div> 
+                <div class="w20 mx-1">
+                    <button id="btn-navbar-btn" class="w-100 rounded-d border border-dark border-1">
+                        <a href="#" class="text-dark  text-decoration-none text-uppercase fs11">
+                            <i class="fas fa-check-circle" style="font-size:16px ;"></i>
+                            <span>chính sách bảo hành</span>
+                        </a>
+                    </button>
+                </div> 
+                <div class="w20 mx-1">
+                    <button id="btn-navbar-btn" class="w-100 rounded-d border border-dark border-1">
+                        <a href="#" class="text-dark  text-decoration-none text-uppercase fs11">
+                            <i class="fas fa-truck" style="font-size:16px ;"></i>
+                            <span>chính sách vận chuyển</span>
+                        </a>
+                    </button>
+                </div>              
+            </div>
+        </div>
+        
+        <div class="ads row w-100 mx-1 mb-3">
+            <div class="col-3 side-menu d-none d-sm-none d-md-none d-lg-flex">                  
+                <div class="menu-a d-flex flex-column w-100">                                      
+                                                                                       
+                </div>     
+            </div>
+            <div class="ads-banner col-9">
+                <div id="row1" class="row">
+                    <div class="col-12 col-lg-12 col-md-12 col-sm-12 col-xl-8">
+                        <div id="carousel" class="carousel slide" data-bs-ride="carousel">
+                            <div class="carousel-indicators">
+                              <button type="button" data-bs-target="#carousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                              <button type="button" data-bs-target="#carousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                              <button type="button" data-bs-target="#carousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                            </div>
+                            <div class="carousel-inner">
+                              <div class="carousel-item active">
+                                <a href="#">
+                                    <img src="images/carou12.webp" class="d-block w-100" alt="...">
+                                </a>                             
+                              </div>
+                              <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/carou12.webp" class="d-block w-100" alt="...">
+                                </a>
+                              </div>
+                              <div class="carousel-item">
+                                <a href="#">
+                                    <img src="images/carou12.webp" class="d-block w-100" alt="...">
+                                </a>
+                              </div>
+                            </div>
+                            <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+                              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Previous</span>
+                            </button>
+                            <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+                              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                              <span class="visually-hidden">Next</span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="col-4 d-none d-sm-none d-xl-block ">
+                        <div class="row">
+                            <a href="#">
+                                <img src="images/carou3.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                        <div class="row">
+                            <a href="#">
+                                <img src="images/carou3-1.webp" class="d-block w-100" alt="...">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div id="row2" class="row">
+                    <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-2.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-12 col-xl-4 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-3.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-4 col-xl-4 d-none d-sm-none d-xl-block ">
+                        <a href="#">
+                            <img src="images/carou3-4.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-5.webp" class="d-block w-100" alt="...">
+                        </a>                       
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-6.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-7.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                    <div class="col-xl-3 col-lg-6 col-md-6 col-sm-12">
+                        <a href="#">
+                            <img src="images/carou3-8.webp" class="d-block w-100" alt="...">
+                        </a>
+                    </div>
+                </div>
+            </div>           
+        </div>
+
+        <div id="main">
+            <h3 class="bg-danger text-white">
+                <span class="text-uppercase">Sản phẩm</span>              
+                <a href="#" class="text-white text-decoration-none float-end fs-4">
+                    <span>Xem tất cả</span>
+                    <i class="fas fa-angle-right"></i>
+                </a>
+            </h3>
+            <div id="items" class="row">
+                 
+            </div>  
+            <div class="page">
+                <nav aria-label="Page navigation">
+                    <ul class="pagination justify-content-center ">
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Previous
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link actived" href="#">
+                                1
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                2
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                3
+                            </a>
+                        </li>
+                        <li class="page-item">
+                            <a class="page-link" href="#">
+                                Next
+                            </a>
+                        </li>
+                    </ul>
+                  </nav>
+            </div> 
+        </div>
+
+        <footer>
+            <div class="row">
+                <div class="col-6">
+                    <div class="fw-bold">
+                        CÔNG TY TNHH THƯƠNG MẠI EXAMPLE
+                    </div>
+                    <div class="fw-bold">
+                        EMAIL: CSKH@EXAMPLE.COM
+                    </div>
+                    <div>
+                        <b>HỆ THỐNG TỔNG ĐÀI MIỄN PHÍ:</b>  
+                        (Làm việc từ 08h00 - 21h00)
+                    </div>
+                    <div>
+                        Gọi mua hàng: <B>123456789</B>
+                    </div>
+                    <div>
+                        Hỗ trợ khách hàng: <B>123456789</B>
+                    </div>
+                    <div class="mt-5">
+                        <a href="#" class="text-decoration-none">
+                            Chính sách bảo hành
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none">
+                            Chính sách thanh toán
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none">
+                            Chính sách giao hàng
+                        </a>
+                    </div>
+                    <div class="mt-2">
+                        <a href="#" class="text-decoration-none">
+                            Chính sách bảo mật
+                        </a>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div id="row1" class="row">
+                        <h5 class="text-uppercase">
+                            <a href="#" class="text-decoration-none">hệ thống cửa hàng</a>
+                        </h5>
+                        <div>
+                            <b>SHOWROOM HCM</b>  
+                            (Làm việc từ 08h00 - 21h00)
+                            <h6>- Địa chỉ 1: 78-80-82 Hoàng Hoa Thám, Phường 12, Quận Tân Bình.</h6>
+                            <h6>- Địa chỉ 2: 905 Kha Vạn Cân, Phường Linh Tây, Thành phố Thủ Đức.</h6>
+                            <h6>- Địa chỉ 3: 1081 - 1083 Trần Hưng Đạo, Phường 5, Quận 5.</h6>
+                            <h6>- Địa chỉ 4: 415 An Dương Vương, Phường 10, Quận 6.</h6>
+                        </div>
+                        <div>
+                            <b>SHOWROOM HN</b>  
+                            (Làm việc từ 08h00 - 21h00)
+                            <h6>- Địa chỉ : 162 - 164 Thái Hà, Phường Trung Liệt, Quận Đống Đa, Hà Nội</h6>
+                        </div>
+                    </div>
+                    <div id="row2" class="row">
+                        <h5 class="text-uppercase">
+                            <a href="#" class="text-decoration-none">trung tâm bảo hành</a>
+                        </h5>
+                        <h6>- Địa chỉ : 436A/71 đường 3/2, Phường 12, Quận 10, Hồ Chí Minh.</h6>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!-- ----------------offcanvas----------------------- -->
+    <div class="offcanvas offcanvas-start" id="offcanvas">
+        <div class="offcanvas-header">                     
+            <a href="#">
+                <img src="/images/logo-mini.svg" alt="logo Gear VN" style="width: 30px;">
+            </a>    
+            <button type="button" class="btn-close" data-bs-dismiss="offcanvas"></button>                 
+        </div>
+        <div class="offcanvas-body">
+            <div class="top">
+                <div class="w-50">
+                    <a href="#" class="text-decoration-none text-black">
+                        <i class="fab fa-wpforms" style='font-size:14px;'></i>
+                        <span>Đăng ký</span>
+                    </a>
+                </div>
+                <div class="w-50">
+                    <a href="#" class="text-decoration-none text-black">
+                        <i class="fas fa-user-circle" style='font-size:14px;'></i>
+                        <span>Đăng nhập</span>
+                    </a>
+                </div>                           
+            </div>
+
+            <div class="mid">
+                <h6 class="fw-bold">Danh mục</h6>
+                <div>
+                    <div class="contain">
+                        <button class="border-0">
+                            <i class="fas fa-laptop" style="font-size:24px;"></i>                                      
+                        </button>   
+                        <span>Laptop gaming</span>                                     
+                        <a id="dropdown" class="text-decoration-none text-black" data-bs-toggle="collapse" href="#collapseExample">
+                            <i class="fas fa-angle-down"></i>
+                        </a>
+                            <div class="collapse" id="collapseExample">
+                                <ul>
+                                    <li>
+                                        <a href="#" class="text-decoration-none text-black">
+                                            Thương hiệu
+                                        </a>
+                        
+                                        <button class="border-0" data-bs-toggle="collapse" href="#collapse1">
+                                            <i class="fas fa-angle-down"></i>
+                                        </button>
+                                        <div class="collapse" id="collapse1">
+                                            <ul>                                          
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        ACER | PREDATOR
+                                                    </a>
+                                                </li>  
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        ASUS / ROG
+                                                    </a>
+                                                </li>
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        MSI
+                                                    </a>
+                                                </li> 
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        LENOVO
+                                                    </a>
+                                                </li> 
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        DELL
+                                                    </a>
+                                                </li>
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        GYGABYTE
+                                                    </a>
+                                                </li>
+                                                <li class="items">
+                                                    <a 
+                                                        href="/#" 
+                                                        class="text-decoration-none text-black"
+                                                    >
+                                                        HP
+                                                    </a>
+                                                </li>                                                                                                                  
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+                    <div class="myContain">
+                        
+                    </div>                                                                    
+                </div>
+            </div>
+
+            <div class="bottom">
+                <h6 class="fw-bold">Thông tin</h6>
+                <div class="bottomItems">
+
+                </div>                          
+            </div>                     
+        </div>
+    </div>    
+</body>
+<script src="./stylesheet/javascript/scripts.js"></script>
+</html>

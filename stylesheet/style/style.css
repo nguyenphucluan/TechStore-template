@@ -1,0 +1,362 @@
+:root{
+    --black--: #000000;
+    --red--: #ff0000;
+    --white--: #ffffff;
+}
+.container{
+    max-width: 1320px;
+}
+.navbar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: fit-content;
+    background-color: #eeeeee;
+    z-index: 1000;
+}
+.actived{
+    background-color: #d6ec09;
+}
+#image-logo{
+    position: relative;
+    float: left;
+    width: 15%;
+    max-width: 15%;
+    height: auto;
+}
+#image-logo img{
+    width: 100%;
+    height: auto;
+}
+.hidden-menu {
+    display: none;
+    position: relative; 
+    width: 100%;
+}
+.offcanvas-body .top{
+    position: relative;
+    display: flex;
+}
+.offcanvas-body .top span{
+    position: relative;
+    top: 0px;
+    left: 10px;
+}
+.offcanvas-body .mid .contain{
+    position: static;
+    margin-top: 10px;
+}
+.offcanvas-body .mid .contain span{
+    position: relative;
+    left: 5px;
+}
+.offcanvas-body .mid .contain #dropdown{
+    position: relative;
+    float: right;
+    top: 14px;
+}
+.offcanvas-body .mid li{
+    position: relative;
+    list-style-type: none;
+    font-size: 14px;
+}
+.offcanvas-body .mid li button{
+    position: relative;
+    top: 5px;
+    left: -5px;
+}
+.offcanvas-body .mid .contain .items{
+    list-style: circle;
+}
+.offcanvas-body .bottom{
+    position: static;
+}
+.offcanvas-body .bottom .contain{
+    margin-top: 10px;
+}
+.offcanvas-body .bottom a i{
+    position: relative;
+    top: 5px;
+    left: 16px;
+}
+.offcanvas-body .bottom a span{
+    position: relative;
+    left: 22px;
+    top: 8px;
+}
+
+#main-bar{
+    position: relative;
+    width: 85%;
+    float: left;
+    top: 0;
+    left: 5px;
+}
+#navbar-top{
+    position: relative;
+    top: 10px;   
+}
+#navbar-top .cart{
+    position: relative;
+}
+#navbar-top .cart .number-cart{
+      position: absolute;
+      left: 0px;
+      top: -5px;
+      color: white;
+      font-size: 16px;
+      background-color: #ff0000;
+      border-radius: 15px;
+      width: 15px;
+      height: fit-content;
+      text-align: center;
+}
+
+#navbar-bottom{
+    position: relative;
+    top: 0px;
+    left: 30px;
+}
+#navbar-btn{
+    display: none;
+}
+input[type="text"]{
+    height: 50%;
+    max-height: 50%;
+    outline: 0;
+    width: 92%;
+    border: none;
+}
+.btn-search{
+    width: 8%;
+    height: 50%;
+}
+.bg-grey{
+    background-color: grey;
+}
+.fs11{
+    font-size: 11px;
+}
+.fs14{
+    font-size: 14px;
+}
+.fs13{
+    font-size: 13px;
+}
+.w10{
+    width: 10%;
+}
+.w15{
+    width: 15%;
+}
+.w20{
+    width: 20%;
+}
+.w25{
+    width: 25%;
+}
+.w40{
+    width: 50%;
+}
+.w80{
+    width: 80%;
+}
+.rounded-c{
+    border-radius: 0px 20px 20px 0px;
+}
+.rounded-d{
+    border-radius: 10px;
+}
+#btn-navbar-btn:hover{
+    background-color: var(--red--);
+}
+/* ----------- End Navbar -------------- */
+.ads {
+    position: relative;
+    top: 150px;
+}
+.ads .side-menu{   
+    width: 20%;
+}
+.ads .side-menu button{   
+    width: 100%;
+    padding: 5px;
+}
+.ads .side-menu button:hover{
+    background-color: #ff0000;
+}
+.ads .side-menu button i{
+    width: 25%;
+    float: left;
+}
+.ads .side-menu button span{
+    width: 75%;
+}
+.ads .ads-banner{
+    width: 80%;
+    height: auto;
+}
+.ads img{
+    width: 100%;
+    min-width: 100%;
+}
+.ads #carousel .carousel-inner img{
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+}
+#main{
+    position: relative;
+    top: 170px;
+}
+#main #items .card{
+    position: relative;
+    margin-bottom: 15px;
+}
+#main #items .card .product-price{
+    position: relative;
+    display: block;
+    bottom: 0;
+}
+#main #items .card .tag-product{
+    position: absolute;
+    background-color: #ff0000;
+    padding-left: 8px;
+    padding-right: 8px;
+    top: 10px;
+    right: 25px;
+}
+#main #items .card .discount{
+    font-size: 16px;
+    position: absolute;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    background-color: hsl(56, 90%, 49%);
+    border-radius: 50%;
+    bottom: 30px;
+    right: 15px;
+    padding-top: 8px;
+}
+#main #items .card button[type="button"]{
+    position: relative;
+    top: 0;
+    border-radius: 10px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+#main #items .card button[type="button"]:hover{
+    background-color: #ff0000;
+}
+#main #items .col-fix20{
+    width: 20% !important;
+}
+#main #items .card-body {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    padding: 0;
+    left: 0;
+}
+#main #items h2{
+    font-size: 16px;
+}
+#main #items a del{
+    font-size: 14px;
+}
+#main #items a .price{
+    position: relative;  
+    bottom: 0px; 
+    font-size: 20px;
+}
+
+footer{
+    position:relative;
+    top: 180px;
+}
+/* Extra small devices (phones, 576px and down) */
+@media only screen and (max-width: 576px) {
+    .find{
+        width: 80%;
+    }
+    .cart{
+        width: 20%;
+    }
+    .hidden-menu{
+        display: contents;
+    }
+    .ads{
+        top: 80px;
+    }
+    .ads .ads-banner{
+        width: 100%;
+    }
+    #main #items .col-fix20{
+        width: 100% !important;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 577px and up) */
+@media only screen and (min-width: 577px)  {
+    .find{
+        width: 80%;
+    }
+    .cart{
+        width: 20%;
+    }
+    .hidden-menu{
+        display: contents;
+    }
+    .ads{
+        top: 80px;
+    }
+    .ads .ads-banner{
+        width: 100%;
+    }
+    #main #items .col-fix20{
+        width: 100% !important;
+    }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px)   {
+    #main #items .col-fix20{
+        width: 50% !important;
+    }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px)  {
+    .hidden-menu{
+        display: none;
+    }
+    #navbar-bottom .contain span{
+        font-size: 11px;
+    }
+    .ads{
+        top: 180px;
+    }
+    .ads .ads-banner{
+        width: 80%;
+    }
+    #main #items .col-fix20{
+        width: 33.333% !important;
+    }
+    
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    #navbar-bottom .contain span{
+        font-size: 14px;
+    }
+    #navbar-btn span{
+        font-size: 13px;
+    }
+    #main #items .col-fix20{
+        width: 20% !important;
+    }
+}
