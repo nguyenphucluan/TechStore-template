@@ -192,7 +192,7 @@ menu_a.innerHTML = items.map(item =>
 const cardItems = [
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -202,7 +202,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -212,7 +212,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -222,7 +222,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -232,7 +232,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -242,7 +242,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -252,7 +252,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -262,7 +262,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -272,7 +272,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -282,7 +282,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -292,7 +292,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -302,7 +302,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -312,7 +312,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -322,7 +322,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
@@ -332,7 +332,7 @@ const cardItems = [
   },
   {
     href:"#",
-    src:"/images/card.webp",
+    src:"images/card.webp",
     tag_product:"Bestseller",
     discount:"-25%",
     name:"Laptop gaming MSI Katana GF66 11UC 224VN",
